@@ -62,8 +62,6 @@ body {
 /* ---------------------------------------------- */
 
 header {
-	position: absolute;
-	top: 0;
 	width: 100vw;
 	height: 12.5rem;
 	border: 1px solid black;
@@ -111,3 +109,6 @@ header {
 	transform: translateY(5px);
 	background-color: #dbd1ff;
 }
+
+/* HOME */
+/* ---------------------------------------------- */

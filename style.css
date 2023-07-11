@@ -50,38 +50,50 @@ table {
 /* IMPORTS & UTILS*/
 /* ---------------------------------------------- */
 
+:root {
+	--header-color: #f5f4f8;
+}
 /* HEADER */
 /* ---------------------------------------------- */
 
 header {
+	position: absolute;
+	top: 0;
 	width: 100vw;
-	height: 50vh;
-}
+	height: 12.5rem;
+	background-color: var(--header-color);
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    top: 50vh;
-    left: 0;
-    width: 100%;
-	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 #logo {
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 15px;
     font-family: 'roboto', cursive;
-    font-size: 2rem;
+    font-size: 2.5rem;
 	color: rgb(0, 0, 0);
-	border: 1px solid red;
-	display: inline-flex;
 }
 
-.navbar ul {
-	display: inline-flex;
+.navbar {
+	margin-top: 1rem;
+	width: 100%;
+	position: sticky;
+
+    display: flex;
+	justify-content: space-around;
 }
 
 .navbar a {
+	border: 1px solid black;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: var(--header-color);
+	padding: 0.6rem 1rem;
+	font-size: 2rem;
 	text-decoration: none;
 	color: rgb(0, 0, 0);
 }

@@ -104,4 +104,10 @@ header {
 	font-size: 2rem;
 	text-decoration: none;
 	color: rgb(0, 0, 0);
+	transition: 0.3s ease;
+}
+
+.navbar a:hover {
+	transform: translateY(5px);
+	background-color: #dbd1ff;
 }

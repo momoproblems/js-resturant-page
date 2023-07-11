@@ -78,6 +78,7 @@ header {
 	border-radius: 15px;
     font-family: 'roboto', cursive;
     font-size: 2.5rem;
+	font-weight: 700;
 	color: rgb(0, 0, 0);
 }
 
@@ -86,11 +87,11 @@ header {
 
 .navbar {
 	margin-top: 1rem;
-	width: 100%;
+	width: 85vw;
 	position: sticky;
 
     display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .navbar a {
@@ -112,3 +113,34 @@ header {
 
 /* HOME */
 /* ---------------------------------------------- */
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	border: 1px solid red
+}
+
+#mainTitle {
+	text-align: center;
+	margin: 1rem 0;
+	font-size: 1.5rem;
+
+	border: 1px solid black;
+}
+
+.food-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid rgb(19, 185, 74);
+	background-color: white;
+	width: 85vw;
+}
+
+.food-image img {
+	width: 500px;
+	object-fit: contain;
+}

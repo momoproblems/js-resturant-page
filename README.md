@@ -6,5 +6,5 @@
 3. ran npm install webpack webpack-cli --save-dev
 
 ## Images used
-
-header iamge: Image by <a href="https://pixabay.com/users/viarami-13458823/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5222443">Markus Winkler</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5222443">Pixabay</a>
+# HOME
+* Image by <a href="https://pixabay.com/users/gadini-388416/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=618400">Adriano Gadini</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=618400">Pixabay</a>

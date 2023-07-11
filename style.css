@@ -53,6 +53,11 @@ table {
 :root {
 	--header-color: #f5f4f8;
 }
+
+body {
+	background-color: var(--header-color);
+}
+
 /* HEADER */
 /* ---------------------------------------------- */
 
@@ -61,7 +66,7 @@ header {
 	top: 0;
 	width: 100vw;
 	height: 12.5rem;
-	background-color: var(--header-color);
+	border: 1px solid black;
 
 	display: flex;
 	flex-direction: column;
@@ -88,10 +93,10 @@ header {
 }
 
 .navbar a {
-	border: 1px solid black;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	background-color: var(--header-color);
+	border: 1px solid black;
 	padding: 0.6rem 1rem;
 	font-size: 2rem;
 	text-decoration: none;

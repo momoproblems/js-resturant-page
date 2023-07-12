@@ -4,7 +4,6 @@ const foodGrid = document.createElement('div');
 const mainTitle = document.createElement('div');
 
 
-
 function createFoodGrid() {
     foodGrid.classList.add('food-grid');
     mainTitle.setAttribute('id', 'mainTitle');

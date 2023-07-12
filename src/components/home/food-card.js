@@ -66,6 +66,8 @@ const urls = {
     tomatoURL: "https://en.wikipedia.org/wiki/Tomato"
 }
 
+const foodCard = document.createElement('div');
+
 function createCard(image, title, description, urls) {
     foodCard.classList.add('food-card');
     

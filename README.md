@@ -7,7 +7,7 @@
 4. organize file/folder structure like this repo's
 5. bundle src files with "npx webpack" to bundle once or "npx webpack --watch" to bundle automatically whenever there is new changes 
 * "npx WEBPACK" finds the config file 'webpack.config.js' by default but if you want to specify a specific config file you can use "npx webpack --config <config file name>
-* "build": "webpack" is used so that one can use the commands "npm run build" script
+* "build": "webpack" is used so that one can use the commands "npm run build" script (This convention is the standard in most npm-based projects because it allows all contributors to use the same set of common scripts.)
 * more info at https://webpack.js.org/guides/getting-started/
 
 ## Images used

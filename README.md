@@ -1,9 +1,11 @@
 # js-resturant-page
  
 ## Setup
-1. Ran npm init -y to generate a package.json file
+1. run npm init -y to generate a package.json file
 2. Setup .gitignore for node_modules
-3. ran npm install webpack webpack-cli --save-dev
+3. run npm install webpack webpack-cli --save-dev
+4. organize file/folder structure like this repo's
+5. bundle src files with "npx webpack" to bundle once or "npx webpack --watch" to bundle automatically whenever there is new changes (note: "npx WEBPACK" finds the config file 'webpack.config.js' by default but if you want to specify a specific config file you can use "npx webpack --config <config file name>)
 
 ## Images used
 # HOME

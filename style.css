@@ -132,29 +132,51 @@ header {
 
 .food-grid {
 	display: grid;
-	grid-template-columns: repeat(auto, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto, minmax(250px, 1fr));
 	background-color: #dbd1ff;
 	width: 85vw;
-
-	border: 1px solid rgb(19, 185, 74);
+	gap: 1rem;
 }
 
 .food-card {
-	border: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 400px;
+	width: 300px;
+
+	box-shadow:
+    0px 0px 10px rgba(0, 0, 0, 0.4),
+    0px 2px 8px rgba(0, 0, 0, 0.8),
+    0px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.food-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	border: 1px solid black;
+
+	margin: 0.5rem;
+	font-size: 2rem;
+}
+
+.food-title-text {
+	margin: 0.5rem;
+	font-size: 2rem;
+}
+
+.food-title span {
+	justify-self: flex-end;
+	font-size: 2.5rem;
 }
 
 .food-image img {
 	width: 100%;
-	height: 100%;
 }
 
 .food-info {
 	margin: 1rem;
-	font-size: 1.5rem;
-	background-color: blue;
+	font-size: 1rem;
 }

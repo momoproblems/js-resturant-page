@@ -89,6 +89,7 @@ function createCard(image, title, description, urls) {
 
     const aElement = document.createElement('a');
     aElement.classList.add('food-button');
+    aElement.textContent = "More Info";
     aElement.href = urls;
 
     foodCard.appendChild(imageDiv);

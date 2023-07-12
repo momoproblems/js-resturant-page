@@ -1,13 +1,18 @@
 # js-resturant-page
  
 ## Setup
-1. Ran npm init -y to generate a package.json file
+1. run npm init -y to generate a package.json file
 2. Setup .gitignore for node_modules
-3. ran npm install webpack webpack-cli --save-dev
+3. run npm install webpack webpack-cli --save-dev
+4. organize file/folder structure like this repo's
+5. bundle src files with "npx webpack" to bundle once or "npx webpack --watch" to bundle automatically whenever there is new changes
+* "npx WEBPACK" finds the config file 'webpack.config.js' by default but if you want to specify a specific config file you can use "npx webpack --config
+* "build": "webpack" is used so that one can use the commands "npm run build" script (This convention is the standard in most npm-based projects because it allows all contributors to use the same set of common scripts.)
+* more info at https://webpack.js.org/guides/getting-started/
+6. Installed HtmlWebpackPlugin
 
 ## Images used
-# HOME
-* Image by <a href="https://pixabay.com/users/gadini-388416/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=618400">Adriano Gadini</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=618400">Pixabay</a>
+Image by <a href="https://pixabay.com/users/gadini-388416/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=618400">Adriano Gadini</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=618400">Pixabay</a>
 
 Image by <a href="https://pixabay.com/users/shutterbug75-2077322/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1238332">Robert Owen-Wahl</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1238332">Pixabay</a>
 

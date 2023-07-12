@@ -66,9 +66,10 @@ const urls = {
     tomatoURL: "https://en.wikipedia.org/wiki/Tomato"
 }
 
-const foodCard = document.createElement('div');
+
 
 function createCard(image, title, description, urls) {
+    const foodCard = document.createElement('div');
     foodCard.classList.add('food-card');
     
     const imageDiv = document.createElement('div');
@@ -109,4 +110,16 @@ const onionCard = createCard(images.onionImage, titles.onionTitle, descriptions.
 const spinachCard = createCard(images.spinachImage, titles.spinachTitle, descriptions.spinachDescription, urls.spinachURL);
 const tomatoCard = createCard(images.tomatoImage, titles.tomatoTitle, descriptions.tomatoDescription, urls.tomatoURL);
 
-export {cilantroCard, coffeeCard, cuminCard, eggCard, garlicCard, lambMeatCard, milkCard, oliveOilCard, onionCard, spinachCard, tomatoCard};
+export {
+    cilantroCard,
+    coffeeCard,
+    cuminCard,
+    eggCard,
+    garlicCard,
+    lambMeatCard,
+    milkCard,
+    oliveOilCard,
+    onionCard,
+    spinachCard,
+    tomatoCard,
+};

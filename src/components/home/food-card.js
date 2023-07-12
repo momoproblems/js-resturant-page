@@ -10,10 +10,6 @@ import onionImage from './assets/home/onion.jpg';
 import spinachImage from './assets/home/spinach.jpg';
 import tomatoImage from './assets/home/tomatoes.jpg';
 
-import foodGrid from './food-grid'
-
-const foodCard = document.createElement('div');
-
 const images = {
     cilantroImage,
     coffeeImage,
@@ -111,16 +107,4 @@ const onionCard = createCard(images.onionImage, titles.onionTitle, descriptions.
 const spinachCard = createCard(images.spinachImage, titles.spinachTitle, descriptions.spinachDescription, urls.spinachURL);
 const tomatoCard = createCard(images.tomatoImage, titles.tomatoTitle, descriptions.tomatoDescription, urls.tomatoURL);
 
-foodGrid.appendChild(cilantroCard);
-foodGrid.appendChild(coffeeCard);
-foodGrid.appendChild(cuminCard);
-foodGrid.appendChild(eggCard);
-foodGrid.appendChild(garlicCard);
-foodGrid.appendChild(lambMeatCard);
-foodGrid.appendChild(milkCard);
-foodGrid.appendChild(oliveOilCard);
-foodGrid.appendChild(onionCard);
-foodGrid.appendChild(spinachCard);
-foodGrid.appendChild(tomatoCard);
-
-export default foodGrid;
+export {cilantroCard, coffeeCard, cuminCard, eggCard, garlicCard, lambMeatCard, milkCard, oliveOilCard, onionCard, spinachCard, tomatoCard};

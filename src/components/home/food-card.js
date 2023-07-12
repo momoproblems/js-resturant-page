@@ -88,7 +88,39 @@ function createCard(image, title, description, urls) {
     infoDiv.appendChild(titleElement);
     infoDiv.appendChild(descElement);
 
-    const 
+    const aElement = document.createElement('a');
+    aElement.classList.add('food-button');
+    aElement.href = urls;
+
+    foodCard.appendChild(imageDiv);
+    foodCard.appendChild(infoDiv);
+    foodCard.appendChild(aElement);
 
     return foodCard;
 }
+
+const cilantroCard = createCard(images.cilantroImage, titles.cilantroTitle, descriptions.cilantroDescription, urls.cilantroURL);
+const coffeeCard = createCard(images.coffeeImage, titles.coffeeTitle, descriptions.coffeeDescription, urls.coffeeURL);
+const cuminCard = createCard(images.cuminImage, titles.cuminTitle, descriptions.cuminDescription, urls.cuminURL);
+const eggCard = createCard(images.eggImage, titles.eggTitle, descriptions.eggDescription, urls.eggURL);
+const garlicCard = createCard(images.garlicImage, titles.garlicTitle, descriptions.garlicDescription, urls.garlicURL);
+const lambMeatCard = createCard(images.lambMeatImage, titles.lambMeatTitle, descriptions.lambMeatDescription, urls.lambMeatURL);
+const milkCard = createCard(images.milkImage, titles.milkTitle, descriptions.milkDescription, urls.milkURL);
+const oliveOilCard = createCard(images.oliveOilImage, titles.oliveOilTitle, descriptions.oliveOilDescription, urls.oliveOilURL);
+const onionCard = createCard(images.onionImage, titles.onionTitle, descriptions.onionDescription, urls.onionURL);
+const spinachCard = createCard(images.spinachImage, titles.spinachTitle, descriptions.spinachDescription, urls.spinachURL);
+const tomatoCard = createCard(images.tomatoImage, titles.tomatoTitle, descriptions.tomatoDescription, urls.tomatoURL);
+
+foodGrid.appendChild(cilantroCard);
+foodGrid.appendChild(coffeeCard);
+foodGrid.appendChild(cuminCard);
+foodGrid.appendChild(eggCard);
+foodGrid.appendChild(garlicCard);
+foodGrid.appendChild(lambMeatCard);
+foodGrid.appendChild(milkCard);
+foodGrid.appendChild(oliveOilCard);
+foodGrid.appendChild(onionCard);
+foodGrid.appendChild(spinachCard);
+foodGrid.appendChild(tomatoCard);
+
+export default foodGrid;

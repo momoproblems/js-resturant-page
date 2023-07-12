@@ -52,6 +52,13 @@ table {
 
 :root {
 	--header-color: #f5f4f8;
+	--background-color: #ccfbf1;
+	--light-green-hover: #a7f3d0;
+	--read-color-green: #4ade80;
+	--read-color-red: #f87171;
+	--edit-color: #22d3ee;
+	--remove-color: #e72828;
+	--submit-color: #818cf8;
 }
 
 body {
@@ -133,50 +140,66 @@ header {
 .food-grid {
 	display: grid;
 	grid-template-columns: repeat(auto, minmax(250px, 1fr));
-	background-color: #dbd1ff;
 	width: 85vw;
-	gap: 1rem;
 }
 
 .food-card {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	width: 300px;
-
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-color: #dbd1ff;
 	box-shadow:
     0px 0px 10px rgba(0, 0, 0, 0.4),
     0px 2px 8px rgba(0, 0, 0, 0.8),
     0px 6px 10px rgba(0, 0, 0, 0.4);
+
+	width: 250px;
 }
 
-.food-title {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.food-card > * {
 	width: 100%;
-	border: 1px solid black;
-
-	margin: 0.5rem;
-	font-size: 2rem;
+	text-align: center;
 }
 
-.food-title-text {
-	margin: 0.5rem;
-	font-size: 2rem;
-}
-
-.food-title span {
-	justify-self: flex-end;
-	font-size: 2.5rem;
-}
 
 .food-image img {
 	width: 100%;
+	height: 100%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 }
 
-.food-info {
-	margin: 1rem;
-	font-size: 1rem;
+
+.food-info h1 {
+	padding: 10px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-family: 'Playfair Display', serif;
+	border-bottom: 1px solid black;
+}
+
+.food-info h2 {
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	border-bottom: 1px solid black;
+}
+  
+.food-info p {
+	padding: 10px;
+	font-family: 'Arial', sans-serif;
+}
+
+.food-button:hover {
+	cursor: pointer;
+	background-color: var(--light-green-hover);
+}
+
+.food-button {
+	flex: 1;
+	padding: 10px 0;
+	background-color: var(--edit-color);
+	border-top-left-radius: 5px;
 }

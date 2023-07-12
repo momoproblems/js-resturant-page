@@ -5,7 +5,10 @@
 2. Setup .gitignore for node_modules
 3. run npm install webpack webpack-cli --save-dev
 4. organize file/folder structure like this repo's
-5. bundle src files with "npx webpack" to bundle once or "npx webpack --watch" to bundle automatically whenever there is new changes (note: "npx WEBPACK" finds the config file 'webpack.config.js' by default but if you want to specify a specific config file you can use "npx webpack --config <config file name>)
+5. bundle src files with "npx webpack" to bundle once or "npx webpack --watch" to bundle automatically whenever there is new changes 
+* "npx WEBPACK" finds the config file 'webpack.config.js' by default but if you want to specify a specific config file you can use "npx webpack --config <config file name>
+* "build": "webpack" is used so that one can use the commands "npm run build" script
+* more info at https://webpack.js.org/guides/getting-started/
 
 ## Images used
 # HOME

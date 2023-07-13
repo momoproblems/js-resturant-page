@@ -2,6 +2,12 @@ import { cilantroCard, coffeeCard, cuminCard, eggCard, garlicCard, lambMeatCard,
 
 const foodGrid = document.createElement('div');
 
+const homePage = document.createElement('main');
+homePage.classList.add('wrapper');
+
+const mainTitle = document.createElement('div');
+mainTitle.setAttribute('id', 'mainTitle');
+mainTitle.innerText = 'Here are some of our favorite ingredients that we cook with everyday :)';
 
 function createFoodGrid() {
     foodGrid.classList.add('food-grid');
@@ -20,5 +26,7 @@ foodGrid.appendChild(oliveOilCard);
 foodGrid.appendChild(onionCard);
 foodGrid.appendChild(spinachCard);
 foodGrid.appendChild(tomatoCard);
+homePage.appendChild(mainTitle);
+homePage.appendChild(foodGrid);
 
-export default foodGrid;
+export default homePage;

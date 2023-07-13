@@ -1,14 +1,14 @@
-import cilantroImage from '../../assets/home/cilantro.jpg';
-import coffeeImage from '../../assets/home/coffee.jpg';
-import cuminImage from '../../assets/home/cumin.jpg'
-import eggImage from '../../assets/home/egg.jpg';
-import garlicImage from '../../assets/home/garlic.jpg';
-import lambMeatImage from '../../assets/home/lamb-meat.jpg';
-import milkImage from '../../assets/home/milk.jpg';
-import oliveOilImage from '../../assets/home/olive-oil.jpg';
-import onionImage from '../../assets/home/onion.jpg';
-import spinachImage from '../../assets/home/spinach.jpg';
-import tomatoImage from '../../assets/home/tomatoes.jpg';
+import cilantroImage from '../../../static/images/home/cilantro.jpg'
+import coffeeImage from '../../../static/images/home/coffee.jpg'
+import cuminImage from '../../../static/images/home/cumin.jpg'
+import eggImage from '../../../static/images/home/egg.jpg'
+import garlicImage from '../../../static/images/home/garlic.jpg'
+import lambMeatImage from '../../../static/images/home/lamb-meat.jpg'
+import milkImage from '../../../static/images/home/milk.jpg'
+import oliveOilImage from '../../../static/images/home/olive-oil.jpg'
+import onionImage from '../../../static/images/home/onion.jpg'
+import spinachImage from '../../../static/images/home/spinach.jpg'
+import tomatoImage from '../../../static/images/home/tomatoes.jpg'
 
 const images = {
     cilantroImage,

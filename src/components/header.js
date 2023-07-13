@@ -1,4 +1,4 @@
-const headerElement = document.querySelector('header');
+const headerElement = document.createElement('header');
 
 function createHeader() {
     const logoDiv = document.createElement('div');

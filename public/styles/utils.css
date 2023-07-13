@@ -1,0 +1,14 @@
+/* IMPORTS & UTILS*/
+/* ---------------------------------------------- */
+
+:root {
+	--header-color: #f5f4f8;
+	--light-green-hover: #c7f0db;
+	--card-background: #fde68a;
+	--more-info-color: #22d3ee;
+	--hover-color: #dbd1ff
+}
+
+body {
+	background-color: var(--header-color);
+}

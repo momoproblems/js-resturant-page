@@ -8,7 +8,7 @@ import milkImage from '../../../static/images/home/milk.jpg'
 import oliveOilImage from '../../../static/images/home/olive-oil.jpg'
 import onionImage from '../../../static/images/home/onion.jpg'
 import spinachImage from '../../../static/images/home/spinach.jpg'
-import tomatoImage from '../../../static/images/home/tomato.jpg'
+import tomatoImage from '../../../static/images/home/tomatoes.jpg'
 
 const images = {
     cilantroImage,

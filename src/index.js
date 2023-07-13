@@ -7,8 +7,6 @@ import homePage from './components/home/food-grid';
 import aboutPage from './components/about/about';
 
 const main = document.createElement('main');
-const home = document.getElementById('home');
-const about = document.getElementById('about');
 
 function createHomePage() {
     console.log('create home page function called');
@@ -23,5 +21,13 @@ function createAboutPage() {
     document.body.appendChild(headerElement);
     document.body.appendChild(aboutPage);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const home = document.getElementById('home');
+    const about = document.getElementById('about');
+  
+    home.addEventListener('click', createHomePage);
+    about.addEventListener('click', createAboutPage);
+});
 
 createHomePage();

@@ -11,15 +11,19 @@ function createHeader() {
     const aElement1 = document.createElement('a');
     aElement1.href = '#';
     aElement1.innerText = 'Home'
+    aElement1.setAttribute('id', 'home');
     const aElement2 = document.createElement('a');
     aElement2.href = '#';
     aElement2.innerText = 'About'
+    aElement2.setAttribute('id', 'about');
     const aElement3 = document.createElement('a');
     aElement3.href = '#';
     aElement3.innerText = 'Cooked'
+    aElement3.setAttribute('id', 'cooked');
     const aElement4 = document.createElement('a');
     aElement4.href = '#';
     aElement4.innerText = 'Uncooked'
+    aElement4.setAttribute('id', 'uncooked');
 
     navbar.appendChild(aElement1);
     navbar.appendChild(aElement2);

@@ -1,7 +1,7 @@
-import '../public/styles/reset.css'
-import '../public/styles/utils.css'
-import '../public/styles/header.css'
-import '../public/styles/home.css'
+import '../static/styles/reset.css'
+import '../static/styles/utils.css'
+import '../static/styles/header.css'
+import '../static/styles/home.css'
 import foodGrid from './components/home/food-grid';
 import headerElement from './components/header'
 

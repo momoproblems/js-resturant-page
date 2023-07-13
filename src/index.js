@@ -7,8 +7,14 @@ import headerElement from './components/header'
 
 const mainElement = document.createElement('main');
 
+
 function createHomePage() {
+    const mainTitle = document.createElement('div');
+    mainTitle.setAttribute('id', 'mainTitle');
+    mainTitle.innerText = 'Here are some of our favorite ingredients that we cook with everyday :)';
+
     mainElement.classList.add('wrapper');
+    mainElement.appendChild(mainTitle);
     mainElement.appendChild(foodGrid);
 }
 

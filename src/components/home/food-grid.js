@@ -3,7 +3,7 @@ import { cilantroCard, coffeeCard, cuminCard, eggCard, garlicCard, lambMeatCard,
 const foodGrid = document.createElement('div');
 
 const homePage = document.createElement('main');
-homePage.classList.add('wrapper');
+homePage.classList.add('wrapper-home');
 
 const mainTitle = document.createElement('div');
 mainTitle.setAttribute('id', 'mainTitle');

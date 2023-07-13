@@ -45,7 +45,7 @@ const titles = {
 }
 
 const aboutPage = document.createElement('main');
-aboutPage.classList.add('wrapper');
+aboutPage.classList.add('wrapper-about');
 
 function createBio() {
     const bioDiv = document.createElement('div');

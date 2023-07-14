@@ -7,12 +7,12 @@ import headerElement from './components/header'
 
 function createHomePage() {
     const mainElement = document.createElement('main');
+    mainElement.classList.add('wrapper');
 
     const mainTitle = document.createElement('div');
     mainTitle.setAttribute('id', 'mainTitle');
     mainTitle.innerText = 'Here are some of our favorite ingredients that we cook with everyday :)';
 
-    mainElement.classList.add('wrapper');
     mainElement.appendChild(mainTitle);
     mainElement.appendChild(foodGrid);
 
@@ -24,23 +24,26 @@ function initializeSite() {
     createHomePage();
 }
 
+function removePage() {
+    const mainElement = document.querySelector('main');
+    if (mainElement) {
+        document.body.removeChild(mainElement);
+    }
+}
+
 initializeSite();
 
 document.addEventListener('DOMContentLoaded', () => {
     const aboutButton = document.querySelector('#about');
     aboutButton.addEventListener('click', () => {
         // window.location.href = '/about.html';
-        // mainElement.innerHTML = '';
-        // I want to delete the main element
-        const mainElement = document.querySelector('main'); 
-
-        console.log('about button clicked');
-        document.body.removeChild(mainElement);
+        removePage();
     })
 
     const homeButton = document.querySelector('#home');
     homeButton.addEventListener('click', () => {
-        console.log('home button clicked');
+        // window.location.href = '/index.html';
+        removePage();
         createHomePage();
     })
 });

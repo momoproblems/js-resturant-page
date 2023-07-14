@@ -2,11 +2,11 @@
 /* ---------------------------------------------- */
 
 :root {
-	--header-color: #87CEEB;
+	--header-color: #67e8f9;
 	--background-color: #f5f4f8;
 	--light-green-hover: #c7f0db;
 	--card-background: #fde68a;
-	--more-info-color: #22d3ee;
+	--more-info-color: var(--header-color);
 	--hover-color: #dbd1ff
 }
 

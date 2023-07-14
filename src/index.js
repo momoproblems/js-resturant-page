@@ -7,6 +7,22 @@ import headerElement from './components/header'
 import homePage from './components/home/food-grid';
 import aboutPage from './components/about/about';
 
+const main = document.createElement('main');
+
+function createHomePage() {
+    console.log('create home page function called');
+    main.innerHTML = '';
+    document.body.appendChild(headerElement);
+    document.body.appendChild(homePage); 
+}
+
+function createAboutPage() {
+    console.log('create about page function called');
+    main.innerHTML = '';
+    document.body.appendChild(headerElement);
+    document.body.appendChild(aboutPage);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const home = document.getElementById('home');
     const about = document.getElementById('about');
@@ -15,21 +31,4 @@ document.addEventListener('DOMContentLoaded', function() {
     about.addEventListener('click', createAboutPage);
 });
 
-const main = document.createElement('main');
-
-function createHomePage() {
-    console.log('create home page function called');
-    document.body.appendChild(homePage); 
-}
-
-function createAboutPage() {
-    console.log('create about page function called');
-    document.body.appendChild(aboutPage);
-}
-
-function initializeWebsite() {
-    document.body.appendChild(headerElement);
-    createAboutPage();
-}
-
-initializeWebsite();
+createHomePage();

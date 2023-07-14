@@ -2,7 +2,8 @@
 /* ---------------------------------------------- */
 
 :root {
-	--header-color: #f5f4f8;
+	--header-color: #87CEEB;
+	--background-color: #f5f4f8;
 	--light-green-hover: #c7f0db;
 	--card-background: #fde68a;
 	--more-info-color: #22d3ee;
@@ -10,5 +11,5 @@
 }
 
 body {
-	background-color: var(--header-color);
+	background-color: var(--background-color);
 }

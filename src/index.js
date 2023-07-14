@@ -19,19 +19,17 @@ const main = document.createElement('main');
 
 function createHomePage() {
     console.log('create home page function called');
-    main.innerHTML = '';
     document.body.appendChild(homePage); 
 }
 
 function createAboutPage() {
     console.log('create about page function called');
-    main.innerHTML = '';
     document.body.appendChild(aboutPage);
 }
 
 function initializeWebsite() {
     document.body.appendChild(headerElement);
-    createHomePage();
+    createAboutPage();
 }
 
 initializeWebsite();

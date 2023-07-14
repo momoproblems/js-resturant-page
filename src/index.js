@@ -5,10 +5,9 @@ import '../static/styles/home.css'
 import foodGrid from './components/home/food-grid';
 import headerElement from './components/header'
 
-const mainElement = document.createElement('main');
-
-
 function createHomePage() {
+    const mainElement = document.createElement('main');
+
     const mainTitle = document.createElement('div');
     mainTitle.setAttribute('id', 'mainTitle');
     mainTitle.innerText = 'Here are some of our favorite ingredients that we cook with everyday :)';
@@ -16,12 +15,32 @@ function createHomePage() {
     mainElement.classList.add('wrapper');
     mainElement.appendChild(mainTitle);
     mainElement.appendChild(foodGrid);
-}
 
-function initializeSite() {
-    createHomePage();
-    document.body.appendChild(headerElement);
     document.body.appendChild(mainElement); 
 }
 
+function initializeSite() {
+    document.body.appendChild(headerElement);
+    createHomePage();
+}
+
 initializeSite();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const aboutButton = document.querySelector('#about');
+    aboutButton.addEventListener('click', () => {
+        // window.location.href = '/about.html';
+        // mainElement.innerHTML = '';
+        // I want to delete the main element
+        const mainElement = document.querySelector('main'); 
+
+        console.log('about button clicked');
+        document.body.removeChild(mainElement);
+    })
+
+    const homeButton = document.querySelector('#home');
+    homeButton.addEventListener('click', () => {
+        console.log('home button clicked');
+        createHomePage();
+    })
+});

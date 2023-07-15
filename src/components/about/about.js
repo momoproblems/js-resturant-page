@@ -53,13 +53,13 @@ function createAboutUs() {
 
     const divBio = document.createElement('div');
     divBio.classList.add('about-us-bio');
-    divBio.textContent = imageAlt.aboutUs;
+    divBio.textContent = 'Sophia and I are both senior students at UC Merced. She studies Philosophy while I study Computer Science. We share many loves and interests. We live according to philosophies that are dear to us. And on top of all that we love to cook!!';
 
     const divImage = document.createElement('div');
     divImage.classList.add('about-us-image');
     const imageElement = document.createElement('img');
     imageElement.src = images.aboutUs;
-    imageElement.alt = 'Mohamed and Sophia';
+    imageElement.alt = imageAlt.aboutUs;
     divImage.appendChild(imageElement);
 
     divContainer.appendChild(divBio);
@@ -70,7 +70,7 @@ function createAboutUs() {
 
 function createInterest(image, alt) {
     const divContainer = document.createElement('div');
-    divContainer.classList.add('interest-image');
+    divContainer.classList.add('interests-image');
 
     const imageElement = document.createElement('img');
     imageElement.src = image;
@@ -90,9 +90,9 @@ const catsImage = createInterest(images.cats, imageAlt.cats);
 const chessImage = createInterest(images.chess, imageAlt.chess);
 const concertImage = createInterest(images.concert, imageAlt.concert);
 const eatingImage = createInterest(images.eating, imageAlt.eating);
-eating.imageElement.style.objectPosition = 'top';
+// eating.imageElement.style.objectPosition = 'top';
 const flowersImage = createInterest(images.flowers, imageAlt.flowers);
-flowers.imageElement.style.objectPosition = 'top';
+// flowers.imageElement.style.objectPosition = 'top';
 const motorcycleImage = createInterest(images.motorcycle, imageAlt.motorcycle);
 const philosophyImage = createInterest(images.philosophy, imageAlt.philosophy);
 const winningImage = createInterest(images.winning, imageAlt.winning);

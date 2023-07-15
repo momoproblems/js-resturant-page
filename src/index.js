@@ -31,16 +31,20 @@ function removePage() {
 initializeSite();
 
 document.addEventListener('DOMContentLoaded', () => {
+
+
     const aboutButton = document.querySelector('#about');
-    aboutButton.addEventListener('click', () => {
+    aboutButton.addEventListener('click', (e) => {
         // window.location.href = '/about.html';
+        e.preventDefault();
         removePage();
         createAboutPage();
     })
 
     const homeButton = document.querySelector('#home');
-    homeButton.addEventListener('click', () => {
+    homeButton.addEventListener('click', (e) => {
         // window.location.href = '/index.html';
+        e.preventDefault();
         removePage();
         createHomePage();
     })

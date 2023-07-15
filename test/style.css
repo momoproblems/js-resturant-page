@@ -239,8 +239,12 @@ header {
 	aspect-ratio: 16/9;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	.navbar {
 		flex-direction: column;
+	}
+
+	header {
+		height: 22.5rem;
 	}
 }

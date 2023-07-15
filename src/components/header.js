@@ -21,14 +21,10 @@ function createHeader() {
     aElement3.innerText = 'Cooked'
     aElement3.setAttribute('id', 'cooked');
     const aElement4 = document.createElement('a');
-    aElement4.href = '#';
-    aElement4.innerText = 'Uncooked'
-    aElement4.setAttribute('id', 'uncooked');
 
     navbar.appendChild(aElement1);
     navbar.appendChild(aElement2);
     navbar.appendChild(aElement3);
-    navbar.appendChild(aElement4);
 
     headerElement.appendChild(logoDiv);
     headerElement.appendChild(navbar)

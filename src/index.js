@@ -2,21 +2,11 @@ import '../static/styles/reset.css'
 import '../static/styles/utils.css'
 import '../static/styles/header.css'
 import '../static/styles/home.css'
-import foodGrid from './components/home/food-grid';
+import homePage from './components/home/food-grid';
 import headerElement from './components/header'
 
 function createHomePage() {
-    const mainElement = document.createElement('main');
-    mainElement.classList.add('wrapper');
-
-    const mainTitle = document.createElement('div');
-    mainTitle.setAttribute('id', 'mainTitle');
-    mainTitle.innerText = 'Here are some of our favorite ingredients that we cook with everyday :)';
-
-    mainElement.appendChild(mainTitle);
-    mainElement.appendChild(foodGrid);
-
-    document.body.appendChild(mainElement); 
+    document.body.appendChild(homePage); 
 }
 
 function initializeSite() {

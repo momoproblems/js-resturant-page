@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -92,6 +93,7 @@ header {
 .navbar {
 	margin-top: 1rem;
 	width: 85vw;
+	border: 1px solid black;
 
     display: flex;
 	justify-content: space-between;
@@ -170,4 +172,35 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+/* ABOUT US */
+/* ---------------------------------------------- */
+
+.about-us-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	padding: 2rem;
+	gap: 2rem;
+	flex-wrap: wrap;
+	border: 2px solid black;
+
+	width: 85vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about-us-image {
+	width: 400px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.about-us-image img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	object-position: top;
 }

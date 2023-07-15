@@ -6,11 +6,12 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 2rem 0;
 }
 
 #mainTitle {
 	text-align: center;
-	margin: 2rem 0;
+	margin-bottom: 1rem;
 	font-size: 2.5rem;
 }
 
@@ -18,7 +19,8 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	width: 85vw;
-	gap: 2rem;
+	gap: 5rem;
+	margin-top: 2rem;
 }
 
 .food-card {

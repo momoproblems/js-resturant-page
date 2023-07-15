@@ -10,6 +10,7 @@ header {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+	background-color: var(--header-color);
 }
 
 #logo {
@@ -19,6 +20,7 @@ header {
     font-family: 'roboto', cursive;
     font-size: 2.5rem;
 	font-weight: 700;
+	text-align: center;
 	color: rgb(0, 0, 0);
 }
 
@@ -35,10 +37,11 @@ header {
 .navbar a {
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-	background-color: var(--header-color);
+	background-color: var(--background-color);
 	border: 1px solid black;
 	padding: 0.6rem 1rem;
 	font-size: 2rem;
+	text-align: center;
 	text-decoration: none;
 	color: rgb(0, 0, 0);
 	transition: 0.3s ease;
@@ -47,4 +50,14 @@ header {
 .navbar a:hover {
 	transform: translateY(5px);
 	background-color: var(--hover-color);
+}
+
+@media (max-width: 600px) {
+	.navbar {
+		flex-direction: column;
+	}
+
+	header {
+		height: 22.5rem;
+	}
 }

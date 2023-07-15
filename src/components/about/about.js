@@ -10,7 +10,7 @@ import concert from '../../../static/images/about/concert.jpeg'
 import eating from '../../../static/images/about/eating.jpeg'
 import flowers from '../../../static/images/about/flowers.jpeg'
 import motorcycle from '../../../static/images/about/motorcycle.jpeg'
-import philosophy from '../../../static/images/about/philosophy.jpeg'
+import philosophy from '../../../static/images/about/philosophy.png'
 import winning from '../../../static/images/about/winning.jpeg'
 
 const images = {

@@ -1,6 +1,6 @@
-const headerElement = document.createElement('header');
-
 function createHeader() {
+    const headerElement = document.createElement('header');
+
     const logoDiv = document.createElement('div');
     logoDiv.setAttribute('id', 'logo');
     logoDiv.innerText = "Mohamed & Sophia's Foods";
@@ -32,4 +32,12 @@ function createHeader() {
     return headerElement;
 }
 
-export default createHeader();
+const footerElement = document.createElement('footer');
+const footerDiv = document.createElement('div');
+footerDiv.setAttribute('id', 'footerText');
+footerDiv.innerText = "Made by momoproblems :)";
+footerElement.appendChild(footerDiv);
+
+const headerElement = createHeader();
+
+export { headerElement, footerElement };

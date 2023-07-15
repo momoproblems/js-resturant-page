@@ -9,6 +9,7 @@ import chess from '../../../static/images/about/chess.jpeg'
 import concert from '../../../static/images/about/concert.jpeg'
 import eating from '../../../static/images/about/eating.jpeg'
 import flowers from '../../../static/images/about/flowers.jpeg'
+import flowers2 from '../../../static/images/about/flowers2.jpeg'
 import motorcycle from '../../../static/images/about/motorcycle.jpeg'
 import philosophy from '../../../static/images/about/philosophy.png'
 import winning from '../../../static/images/about/winning.jpeg'
@@ -25,6 +26,7 @@ const images = {
     concert,
     eating,
     flowers,
+    flowers2,
     motorcycle,
     philosophy,
     winning,
@@ -42,6 +44,7 @@ const imageAlt = {
     concert: 'Sophia and Mohamed at a concert',
     eating: 'Sophia and Mohamed eating',
     flowers: 'Sophia with flowers',
+    flowers2: 'Sophia with flowers',
     motorcycle: 'Mohamed on a motorcycle',
     philosophy: 'Sophia and Mohamed with philosophy',
     winning: 'Mohamed winning',
@@ -75,7 +78,7 @@ function createInterest(image, alt) {
     const imageElement = document.createElement('img');
     imageElement.src = image;
     imageElement.alt = alt;
-    if (image === images.eating || image === images.flowers) { 
+    if (image === images.eating || image === images.flowers || image === images.flowers2) {
         imageElement.style.objectPosition = 'top';
     }
 
@@ -94,6 +97,7 @@ const chessImage = createInterest(images.chess, imageAlt.chess);
 const concertImage = createInterest(images.concert, imageAlt.concert);
 const eatingImage = createInterest(images.eating, imageAlt.eating);
 const flowersImage = createInterest(images.flowers, imageAlt.flowers);
+const flowers2Image = createInterest(images.flowers2, imageAlt.flowers2);
 const motorcycleImage = createInterest(images.motorcycle, imageAlt.motorcycle);
 const philosophyImage = createInterest(images.philosophy, imageAlt.philosophy);
 const winningImage = createInterest(images.winning, imageAlt.winning);
@@ -119,6 +123,7 @@ interestsContainer.appendChild(chessImage);
 interestsContainer.appendChild(concertImage);
 interestsContainer.appendChild(eatingImage);
 interestsContainer.appendChild(flowersImage);
+interestsContainer.appendChild(flowers2Image);
 interestsContainer.appendChild(motorcycleImage);
 interestsContainer.appendChild(philosophyImage);
 interestsContainer.appendChild(winningImage);

@@ -106,6 +106,7 @@ header {
 	border: 1px solid black;
 	padding: 0.6rem 1rem;
 	font-size: 2rem;
+	text-align: center;
 	text-decoration: none;
 	color: rgb(0, 0, 0);
 	transition: 0.3s ease;
@@ -236,4 +237,10 @@ header {
 	object-position: center;
 	border-radius: 15px;
 	aspect-ratio: 16/9;
+}
+
+@media (max-width: 500px) {
+	.navbar {
+		flex-direction: column;
+	}
 }

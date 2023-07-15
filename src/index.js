@@ -3,9 +3,11 @@ import '../static/styles/utils.css'
 import '../static/styles/header.css'
 import '../static/styles/home.css'
 import '../static/styles/about.css'
+import '../static/styles/cooked.css'
 import headerElement from './components/header'
 import homePage from './components/home/food-grid';
 import aboutPage from './components/about/about';
+import cookedPage from './components/cooked/cooked';
 
 
 function createHomePage() {
@@ -14,6 +16,10 @@ function createHomePage() {
 
 function createAboutPage() {
     document.body.appendChild(aboutPage);
+}
+
+function createCookedPage() {
+    document.body.appendChild(cookedPage);
 }
 
 function initializeSite() {
@@ -33,6 +39,7 @@ initializeSite();
 document.addEventListener('DOMContentLoaded', () => {
     const homeButton = document.querySelector('#home');
     const aboutButton = document.querySelector('#about');
+    const cookedButton = document.querySelector('#cooked');
 
     homeButton.addEventListener('click', (e) => {
         e.preventDefault();
@@ -44,5 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         removePage();
         createAboutPage();
+    })
+
+    cookedButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        removePage();
+        createCookedPage();
     })
 });

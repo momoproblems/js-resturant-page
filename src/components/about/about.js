@@ -75,6 +75,9 @@ function createInterest(image, alt) {
     const imageElement = document.createElement('img');
     imageElement.src = image;
     imageElement.alt = alt;
+    if (image === images.eating || image === images.flowers) { 
+        imageElement.style.objectPosition = 'top';
+    }
 
     divContainer.appendChild(imageElement);
 
@@ -90,9 +93,7 @@ const catsImage = createInterest(images.cats, imageAlt.cats);
 const chessImage = createInterest(images.chess, imageAlt.chess);
 const concertImage = createInterest(images.concert, imageAlt.concert);
 const eatingImage = createInterest(images.eating, imageAlt.eating);
-// eating.imageElement.style.objectPosition = 'top';
 const flowersImage = createInterest(images.flowers, imageAlt.flowers);
-// flowers.imageElement.style.objectPosition = 'top';
 const motorcycleImage = createInterest(images.motorcycle, imageAlt.motorcycle);
 const philosophyImage = createInterest(images.philosophy, imageAlt.philosophy);
 const winningImage = createInterest(images.winning, imageAlt.winning);

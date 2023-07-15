@@ -31,21 +31,18 @@ function removePage() {
 initializeSite();
 
 document.addEventListener('DOMContentLoaded', () => {
-
-
-    const aboutButton = document.querySelector('#about');
-    aboutButton.addEventListener('click', (e) => {
-        // window.location.href = '/about.html';
-        e.preventDefault();
-        removePage();
-        createAboutPage();
-    })
-
     const homeButton = document.querySelector('#home');
+    const aboutButton = document.querySelector('#about');
+
     homeButton.addEventListener('click', (e) => {
-        // window.location.href = '/index.html';
         e.preventDefault();
         removePage();
         createHomePage();
+    })
+
+    aboutButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        removePage();
+        createAboutPage();
     })
 });

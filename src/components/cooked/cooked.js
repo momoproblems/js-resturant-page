@@ -1,87 +1,87 @@
-import breakfast1 from '../../../static/images/cooked/breakfast1.jpeg'
-import breakfast2 from '../../../static/images/cooked/breakfast2.jpeg'
-import breakfast3 from '../../../static/images/cooked/breakfast3.jpeg'
-import breakfast4 from '../../../static/images/cooked/breakfast4.jpeg'
-import breakfast5 from '../../../static/images/cooked/breakfast5.jpeg'
-import chicken1 from '../../../static/images/cooked/chicken1.jpeg'
-import chicken2 from '../../../static/images/cooked/chicken2.jpeg'
-import dinner1 from '../../../static/images/cooked/dinner1.jpeg'
-import dinner2 from '../../../static/images/cooked/dinner2.jpeg'
-import dinner3 from '../../../static/images/cooked/dinner3.jpeg'
-import dinner4 from '../../../static/images/cooked/dinner4.jpeg'
-import dinner5 from '../../../static/images/cooked/dinner5.jpeg'
-import familyMeal1 from '../../../static/images/cooked/family-meal-1.jpg'
-import familyMeal2 from '../../../static/images/cooked/family-meal-2.jpeg'
-import familyMeal3 from '../../../static/images/cooked/family-meal-3.jpeg'
-import lunch1 from '../../../static/images/cooked/lunch1.jpeg'
-import lunch2 from '../../../static/images/cooked/lunch2.jpeg'
-import lunch3 from '../../../static/images/cooked/lunch3.jpeg'
-import lunch4 from '../../../static/images/cooked/lunch4.jpeg'
-import sandwich1 from '../../../static/images/cooked/sandwich1.jpeg'
-import steakRice from '../../../static/images/cooked/steak-rice.jpeg'
-import steak1 from '../../../static/images/cooked/steak1.jpeg'
+import breakfast1 from '../../../static/images/cooked/breakfast1.jpeg';
+import breakfast2 from '../../../static/images/cooked/breakfast2.jpeg';
+import breakfast3 from '../../../static/images/cooked/breakfast3.jpeg';
+import breakfast4 from '../../../static/images/cooked/breakfast4.jpeg';
+import breakfast5 from '../../../static/images/cooked/breakfast5.jpeg';
+import chicken1 from '../../../static/images/cooked/chicken1.jpeg';
+import chicken2 from '../../../static/images/cooked/chicken2.jpeg';
+import dinner1 from '../../../static/images/cooked/dinner1.jpeg';
+import dinner2 from '../../../static/images/cooked/dinner2.jpeg';
+import dinner3 from '../../../static/images/cooked/dinner3.jpeg';
+import dinner4 from '../../../static/images/cooked/dinner4.jpeg';
+import dinner5 from '../../../static/images/cooked/dinner5.jpeg';
+import familyMeal1 from '../../../static/images/cooked/family-meal-1.jpg';
+import familyMeal2 from '../../../static/images/cooked/family-meal-2.jpeg';
+import familyMeal3 from '../../../static/images/cooked/family-meal-3.jpeg';
+import lunch1 from '../../../static/images/cooked/lunch1.jpeg';
+import lunch2 from '../../../static/images/cooked/lunch2.jpeg';
+import lunch3 from '../../../static/images/cooked/lunch3.jpeg';
+import lunch4 from '../../../static/images/cooked/lunch4.jpeg';
+import sandwich1 from '../../../static/images/cooked/sandwich1.jpeg';
+import steakRice from '../../../static/images/cooked/steak-rice.jpeg';
+import steak1 from '../../../static/images/cooked/steak1.jpeg';
 
 const images = {
-    breakfast1,
-    breakfast2,
-    breakfast3,
-    breakfast4,
-    breakfast5,
-    chicken1,
-    chicken2,
-    dinner1,
-    dinner2,
-    dinner3,
-    dinner4,
-    dinner5,
-    familyMeal1,
-    familyMeal2,
-    familyMeal3,
-    lunch1,
-    lunch2,
-    lunch3,
-    lunch4,
-    sandwich1,
-    steakRice,
-    steak1,
+  breakfast1,
+  breakfast2,
+  breakfast3,
+  breakfast4,
+  breakfast5,
+  chicken1,
+  chicken2,
+  dinner1,
+  dinner2,
+  dinner3,
+  dinner4,
+  dinner5,
+  familyMeal1,
+  familyMeal2,
+  familyMeal3,
+  lunch1,
+  lunch2,
+  lunch3,
+  lunch4,
+  sandwich1,
+  steakRice,
+  steak1,
 };
 
 const imageAlt = {
-    breakfast1: 'Breakfast',
-    breakfast2: 'Breakfast',
-    breakfast3: 'Breakfast',
-    breakfast4: 'Breakfast',
-    breakfast5: 'Breakfast',
-    chicken1: 'Chicken',
-    chicken2: 'Chicken',
-    dinner1: 'Dinner',
-    dinner2: 'Dinner',
-    dinner3: 'Dinner',
-    dinner4: 'Dinner',
-    dinner5: 'Dinner',
-    familyMeal1: 'Family Meal',
-    familyMeal2: 'Family Meal',
-    familyMeal3: 'Family Meal',
-    lunch1: 'Lunch',
-    lunch2: 'Lunch',
-    lunch3: 'Lunch',
-    lunch4: 'Lunch',
-    sandwich1: 'Sandwich',
-    steakRice: 'Steak and Rice',
-    steak1: 'Steak',
+  breakfast1: 'Breakfast',
+  breakfast2: 'Breakfast',
+  breakfast3: 'Breakfast',
+  breakfast4: 'Breakfast',
+  breakfast5: 'Breakfast',
+  chicken1: 'Chicken',
+  chicken2: 'Chicken',
+  dinner1: 'Dinner',
+  dinner2: 'Dinner',
+  dinner3: 'Dinner',
+  dinner4: 'Dinner',
+  dinner5: 'Dinner',
+  familyMeal1: 'Family Meal',
+  familyMeal2: 'Family Meal',
+  familyMeal3: 'Family Meal',
+  lunch1: 'Lunch',
+  lunch2: 'Lunch',
+  lunch3: 'Lunch',
+  lunch4: 'Lunch',
+  sandwich1: 'Sandwich',
+  steakRice: 'Steak and Rice',
+  steak1: 'Steak',
 };
 
 function createCooked(image, alt) {
-    const divContainer = document.createElement('div');
-    divContainer.classList.add('cooked-image');
+  const divContainer = document.createElement('div');
+  divContainer.classList.add('cooked-image');
 
-    const imageElement = document.createElement('img');
-    imageElement.src = image;
-    imageElement.alt = alt;
+  const imageElement = document.createElement('img');
+  imageElement.src = image;
+  imageElement.alt = alt;
 
-    divContainer.appendChild(imageElement);
+  divContainer.appendChild(imageElement);
 
-    return divContainer;
+  return divContainer;
 }
 
 const cookedTitle = document.createElement('div');

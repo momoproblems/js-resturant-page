@@ -10,6 +10,9 @@
 * "build": "webpack" is used so that one can use the commands "npm run build" script (This convention is the standard in most npm-based projects because it allows all contributors to use the same set of common scripts.)
 * more info at https://webpack.js.org/guides/getting-started/
 6. Installed HtmlWebpackPlugin
+7. used "npm init @eslint/config" to install linting for javascript
+8. used "npx install-peerdeps --dev eslint-config-airbnb-base"
+
 
 ## Images used
 Image by <a href="https://pixabay.com/users/gadini-388416/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=618400">Adriano Gadini</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=618400">Pixabay</a>

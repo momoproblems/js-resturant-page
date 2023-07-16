@@ -1,90 +1,90 @@
-import aboutUs from '../../../static/images/about/about-us.jpeg'
-import beach from '../../../static/images/about/beach.jpeg'
-import beingWeird from '../../../static/images/about/being-weird.jpeg'
-import birthday from '../../../static/images/about/birthday.jpeg'
-import bugs from '../../../static/images/about/bugs.jpeg'
-import catTrip from '../../../static/images/about/cat-trip.jpeg'
-import cats from '../../../static/images/about/cats.jpeg'
-import chess from '../../../static/images/about/chess.jpeg'
-import concert from '../../../static/images/about/concert.jpeg'
-import eating from '../../../static/images/about/eating.jpeg'
-import flowers from '../../../static/images/about/flowers.jpeg'
-import flowers2 from '../../../static/images/about/flowers2.jpeg'
-import motorcycle from '../../../static/images/about/motorcycle.jpeg'
-import philosophy from '../../../static/images/about/philosophy.png'
-import winning from '../../../static/images/about/winning.jpeg'
+import aboutUs from '../../../static/images/about/about-us.jpeg';
+import beach from '../../../static/images/about/beach.jpeg';
+import beingWeird from '../../../static/images/about/being-weird.jpeg';
+import birthday from '../../../static/images/about/birthday.jpeg';
+import bugs from '../../../static/images/about/bugs.jpeg';
+import catTrip from '../../../static/images/about/cat-trip.jpeg';
+import cats from '../../../static/images/about/cats.jpeg';
+import chess from '../../../static/images/about/chess.jpeg';
+import concert from '../../../static/images/about/concert.jpeg';
+import eating from '../../../static/images/about/eating.jpeg';
+import flowers from '../../../static/images/about/flowers.jpeg';
+import flowers2 from '../../../static/images/about/flowers2.jpeg';
+import motorcycle from '../../../static/images/about/motorcycle.jpeg';
+import philosophy from '../../../static/images/about/philosophy.png';
+import winning from '../../../static/images/about/winning.jpeg';
 
 const images = {
-    aboutUs,
-    beach,
-    beingWeird,
-    birthday,
-    bugs,
-    catTrip,
-    cats,
-    chess,
-    concert,
-    eating,
-    flowers,
-    flowers2,
-    motorcycle,
-    philosophy,
-    winning,
+  aboutUs,
+  beach,
+  beingWeird,
+  birthday,
+  bugs,
+  catTrip,
+  cats,
+  chess,
+  concert,
+  eating,
+  flowers,
+  flowers2,
+  motorcycle,
+  philosophy,
+  winning,
 };
 
 const imageAlt = {
-    aboutUs: 'Mohamed and Sophia',
-    beach: 'Mohamed and Sophia at the beach',
-    beingWeird: 'Sophia and Mohamed being weird',
-    birthday: 'Sophia nirthday',
-    bugs: 'Sophia and bugs',
-    catTrip: 'Mohamed on a trip with their cat',
-    cats: 'Sophia with cat',
-    chess: 'Sophia and Mohamed playing chess',
-    concert: 'Sophia and Mohamed at a concert',
-    eating: 'Sophia and Mohamed eating',
-    flowers: 'Sophia with flowers',
-    flowers2: 'Sophia with flowers',
-    motorcycle: 'Mohamed on a motorcycle',
-    philosophy: 'Sophia and Mohamed with philosophy',
-    winning: 'Mohamed winning',
+  aboutUs: 'Mohamed and Sophia',
+  beach: 'Mohamed and Sophia at the beach',
+  beingWeird: 'Sophia and Mohamed being weird',
+  birthday: 'Sophia nirthday',
+  bugs: 'Sophia and bugs',
+  catTrip: 'Mohamed on a trip with their cat',
+  cats: 'Sophia with cat',
+  chess: 'Sophia and Mohamed playing chess',
+  concert: 'Sophia and Mohamed at a concert',
+  eating: 'Sophia and Mohamed eating',
+  flowers: 'Sophia with flowers',
+  flowers2: 'Sophia with flowers',
+  motorcycle: 'Mohamed on a motorcycle',
+  philosophy: 'Sophia and Mohamed with philosophy',
+  winning: 'Mohamed winning',
 };
 
 function createAboutUs() {
-    const divContainer = document.createElement('div');
-    divContainer.classList.add('about-us-container');
+  const divContainer = document.createElement('div');
+  divContainer.classList.add('about-us-container');
 
-    const divBio = document.createElement('div');
-    divBio.classList.add('about-us-bio');
-    divBio.textContent = 'Sophia and I are both senior students at UC Merced. She studies Philosophy while I study Computer Science. We share many loves and interests. We live according to philosophies that are dear to us. And on top of all that we love to cook!!';
+  const divBio = document.createElement('div');
+  divBio.classList.add('about-us-bio');
+  divBio.textContent = 'Sophia and I are both senior students at UC Merced. She studies Philosophy while I study Computer Science. We share many loves and interests. We live according to philosophies that are dear to us. And on top of all that we love to cook!!';
 
-    const divImage = document.createElement('div');
-    divImage.classList.add('about-us-image');
-    const imageElement = document.createElement('img');
-    imageElement.src = images.aboutUs;
-    imageElement.alt = imageAlt.aboutUs;
-    divImage.appendChild(imageElement);
+  const divImage = document.createElement('div');
+  divImage.classList.add('about-us-image');
+  const imageElement = document.createElement('img');
+  imageElement.src = images.aboutUs;
+  imageElement.alt = imageAlt.aboutUs;
+  divImage.appendChild(imageElement);
 
-    divContainer.appendChild(divBio);
-    divContainer.appendChild(divImage);
+  divContainer.appendChild(divBio);
+  divContainer.appendChild(divImage);
 
-    return divContainer;
+  return divContainer;
 }
 
 function createInterest(image, alt) {
-    const divContainer = document.createElement('div');
-    divContainer.classList.add('interests-image');
+  const divContainer = document.createElement('div');
+  divContainer.classList.add('interests-image');
 
-    const imageElement = document.createElement('img');
-    imageElement.src = image;
-    imageElement.alt = alt;
-    if (image === images.eating || image === images.flowers || image === images.flowers2) {
-        imageElement.style.objectPosition = 'top';
-    }
+  const imageElement = document.createElement('img');
+  imageElement.src = image;
+  imageElement.alt = alt;
+  if (image === images.eating || image === images.flowers || image === images.flowers2) {
+    imageElement.style.objectPosition = 'top';
+  }
 
-    divContainer.appendChild(imageElement);
+  divContainer.appendChild(imageElement);
 
-    return divContainer;
+  return divContainer;
 }
 
 const beachImage = createInterest(images.beach, imageAlt.beach);

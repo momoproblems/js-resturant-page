@@ -17,7 +17,8 @@ homePage.classList.add('wrapper');
 
 const mainTitle = document.createElement('div');
 mainTitle.setAttribute('id', 'mainTitle');
-mainTitle.innerText = 'Here are some of our favorite ingredients that we cook with everyday :)';
+mainTitle.innerText =
+  'Here are some of our favorite ingredients that we cook with everyday :)';
 
 const foodGrid = document.createElement('div');
 foodGrid.classList.add('food-grid');

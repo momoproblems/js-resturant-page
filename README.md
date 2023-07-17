@@ -13,6 +13,11 @@
 7. used "npm init @eslint/config" to install linting for javascript
 8. used "npx install-peerdeps --dev eslint-config-airbnb-base"
 
+"npx install-peerdeps --dev eslint-config-airbnb"
+"npm install --save-dev eslint-config-prettier"
+then
+"npx eslint --init"
+
 
 ## Images used
 Image by <a href="https://pixabay.com/users/gadini-388416/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=618400">Adriano Gadini</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=618400">Pixabay</a>

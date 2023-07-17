@@ -113,67 +113,67 @@ const cilantroCard = createCard(
   images.cilantroImage,
   titles.cilantroTitle,
   descriptions.cilantroDescription,
-  urls.cilantroURL,
+  urls.cilantroURL
 );
 const coffeeCard = createCard(
   images.coffeeImage,
   titles.coffeeTitle,
   descriptions.coffeeDescription,
-  urls.coffeeURL,
+  urls.coffeeURL
 );
 const cuminCard = createCard(
   images.cuminImage,
   titles.cuminTitle,
   descriptions.cuminDescription,
-  urls.cuminURL,
+  urls.cuminURL
 );
 const eggCard = createCard(
   images.eggImage,
   titles.eggTitle,
   descriptions.eggDescription,
-  urls.eggURL,
+  urls.eggURL
 );
 const garlicCard = createCard(
   images.garlicImage,
   titles.garlicTitle,
   descriptions.garlicDescription,
-  urls.garlicURL,
+  urls.garlicURL
 );
 const lambMeatCard = createCard(
   images.lambMeatImage,
   titles.lambMeatTitle,
   descriptions.lambMeatDescription,
-  urls.lambMeatURL,
+  urls.lambMeatURL
 );
 const milkCard = createCard(
   images.milkImage,
   titles.milkTitle,
   descriptions.milkDescription,
-  urls.milkURL,
+  urls.milkURL
 );
 const oliveOilCard = createCard(
   images.oliveOilImage,
   titles.oliveOilTitle,
   descriptions.oliveOilDescription,
-  urls.oliveOilURL,
+  urls.oliveOilURL
 );
 const onionCard = createCard(
   images.onionImage,
   titles.onionTitle,
   descriptions.onionDescription,
-  urls.onionURL,
+  urls.onionURL
 );
 const spinachCard = createCard(
   images.spinachImage,
   titles.spinachTitle,
   descriptions.spinachDescription,
-  urls.spinachURL,
+  urls.spinachURL
 );
 const tomatoCard = createCard(
   images.tomatoImage,
   titles.tomatoTitle,
   descriptions.tomatoDescription,
-  urls.tomatoURL,
+  urls.tomatoURL
 );
 
 export {
